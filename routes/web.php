@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    $title = "My homepage";
-    return view('home', compact("title"));
+    $comics = config('comics');
+    return view('comics', compact("comics"));
 });
 
 Route::get('/comic', function () {
