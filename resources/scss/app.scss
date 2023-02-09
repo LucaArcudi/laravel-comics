@@ -1,1 +1,41 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+body {
+    background-color: black;
+}
+
+header {
+    background-color: white;
+
+    div.jumbo {
+        height: 25rem;
+        background-image: url(../assets/img/jumbotron.jpg);
+        margin-bottom: 4rem;
+    }
+
+    img {
+        width: 115px;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        margin-bottom: 0;
+        list-style-type: none;
+
+        li {
+            font-size: 12px;
+            font-weight: 700;
+            margin: 0 1rem;
+            padding: calc((115px/2) - 10.5px) 0;
+            border-bottom: 3px solid transparent;
+            text-transform: uppercase;
+
+            &.active {
+                color: #0282F9;
+                border-bottom: 3px solid #0282F9;
+            }
+        }
+    }
+}

@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
-@section('title', 'Profile')
+@section('title', 'Comic')
 
 @section('main-content')
 <h1>
-    Profile view
+    Comic view
 </h1>
 
 <h3>

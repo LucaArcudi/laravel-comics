@@ -7,7 +7,7 @@
     Home view
 </h1>
 
-<a href="{{ route('profile') }}">
+<a href="{{ route('comic') }}">
     <h3>
         {{ $title }}
     </h3>
