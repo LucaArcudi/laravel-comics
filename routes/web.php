@@ -16,10 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $comics = config('comics');
-    return view('comics', compact("comics"));
-});
+    return view('comics_a', compact("comics"));
+})->name('comics_a');
 
-Route::get('/comic', function () {
-    $title = "My comic";
-    return view('comic', compact("title"));
-})->name('comic');
+Route::get('/comics_b', function () {
+    $comics = config('comics');
+    return view('comics_b', compact("comics"));
+})->name('comics_b');
